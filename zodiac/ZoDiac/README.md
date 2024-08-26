@@ -1,13 +1,11 @@
-# Robust Image Watermarking using Stable Diffusion
-This is the website for our paper "Robust Image Watermarking using Stable Diffusion". 
-The arXiv version can be found [here](https://arxiv.org/pdf/2401.04247.pdf).
-
-### Abstract
-Watermarking images is critical for tracking image provenance and claiming ownership. With the advent of generative models, such as stable diffusion, able to create fake but realistic images, watermarking has become particularly important, e.g., to make generated images reliably identifiable. Unfortunately, the very same stable diffusion technology can remove watermarks injected using existing methods. To address this problem, we present a ZoDiac, which uses a pre-trained stable diffusion model to inject a watermark into the trainable latent space, resulting in watermarks that can be reliably detected in the latent vector, even when attacked. We evaluate ZoDiac on three benchmarks, MS-COCO, DiffusionDB, and WikiArt, and find that ZoDiac is robust against state-of-the-art watermark attacks, with a watermark detection rate over 98% and a false positive rate below 6.4%, outperforming state-of-theart watermarking methods. Our research demonstrates that stable diffusion is a promising approach to robust watermarking, able to withstand even stable-diffusion-based attacks.
+Run the file ``` zodiac_watermark_generation.py``` after adjusting the paths, to watermark the images, these will be stored in the folder named ``` zodiac_watermarked_samples_with_AE ```.
+Run the file ``` other_attacks_zodiac.py``` after adjusting the paths, to test the watermark images on traditional attacks.
+Run the file ``` paraphrase_test.py``` after adjusting the paths, to test the watermark images after paraphrasing.
 
 
-### Cite
-Welcome to cite our work if you find it is helpful to your research.
+
+## Acknowledgements
+The code is borrowed from [ZoDiac](https://github.com/zhanglijun95/ZoDiac.git). We appreciate the authors for sharing their code. 
 ```
 @misc{zhang2024robust,
       title={Robust Image Watermarking using Stable Diffusion}, 
@@ -18,7 +16,3 @@ Welcome to cite our work if you find it is helpful to your research.
       primaryClass={cs.CV}
 }
 ```
-
-# How To Use
-Prepare the conda environment by running ```conda env create -f environment.yml```.
-Then please refer to the ```Example.ipynb```. Each section can be executed seperately.

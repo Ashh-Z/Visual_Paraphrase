@@ -1,5 +1,7 @@
-Run the file ``` zodiac_watermark_generation.py``` after adjusting the paths, to watermark the images, these will be stored in the folder named ``` zodiac_watermarked_samples_with_AE ```.
+Run the file ``` zodiac_watermark_generation.py``` after adjusting the paths, to watermark the images, these will be stored in the folder named ``` zodiac_watermarked_samples_with_AE ```. 
+
 Run the file ``` other_attacks_zodiac.py``` after adjusting the paths, to test the watermark images on traditional attacks.
+
 Run the file ``` paraphrase_test.py``` after adjusting the paths, to test the watermark images after paraphrasing.
 
 
